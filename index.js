@@ -30,7 +30,16 @@ formE1.addEventListener("submit",()=>{
 
 
 
+formE1.addEventListener("reset",()=>{
+    score=0;
+    uplocalStorage();
+    
+ });
+
 function updatelocalStorage(){
     localStorage.setItem("score",JSON.stringify(score));
+}
+function uplocalStorage(){
+      localStorage.setItem("score",JSON.stringify(0));
 }
 
